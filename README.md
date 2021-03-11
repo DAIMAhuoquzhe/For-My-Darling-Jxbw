@@ -1,10 +1,9 @@
-<a href="complete">
-<button>
-	<h1>点击这里访问正式网页</h1>
-</button>
+<a href="complete" class="btn">开始浏览
 </a>
 
 ### 点击上方按钮进入主网站
+
+### 以下是对网站模板化的说明
 
 ### 说明
 
@@ -20,7 +19,6 @@
 
 如果你只是简单了解相关知识，那么你可以阅读下面的引导来了解这个模板。
 
-### 模板介绍
 #### 修改密码
  在complete下，有js/index.js文件：
  ```javascript
@@ -57,10 +55,8 @@ Firfox未测试
 ## 改进计划
 暂无，后续可能会升级代码（感觉要重写）
 
-##
-音乐组件：
+## 音乐组件（按需添加）：
 <body>
-
 <meting-js 
 	server="netease" 
 	type="song" 
