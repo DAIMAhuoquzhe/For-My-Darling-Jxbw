@@ -1,6 +1,8 @@
-<a href="complete" class="btn">开始浏览
+<a href="complete">
+<button type="button" class="btn"  style="background-color: #7ED321;width: 76px;height: 36px;color: #FFFFFF">
+开始浏览
+</button>
 </a>
-
 ### 点击上方按钮进入主网站
 
 ### 以下是对网站模板化的说明
