@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>中转页面</title>
+    <style type="text/css">
+  input{
+           text-align: center; /*让div内部文字居中*/
+           background-color: #0055ff;
+           border-radius: 20px;
+           width: 260px;
+           height: 80px;
+           margin: auto;
+           position: absolute;
+           top: 300px;
+           left: 0;
+           right: 0;
+           bottom: 0;
+       }
+    </style>
+</head>
+<body id="app">
+	</div>
+	<div>
+		<h2>这里是中转页，请仔细阅读下面的说明：</h1>
+		<h1>浏览下个页面前之前务必在此打开网站声音权限（某些浏览器不需要设置，如果在这个页面你没听到测试音，请立即打开权限）</h1>
+		<h1>Chrome pc端浏览器设置：1.点击地址栏左侧，刷新键右侧的警告图标；2.点击网站设置，选择隐私与安全性；3.找到声音，将默认改为允许</h1>
+	</div>
+	<div><a href="index.html" >
+	<input type="button" value="了解并继续浏览"/><br/>
+	</a>
+	</div>
+		<audio id="audio" src="http://downsc.chinaz.net/Files/DownLoad/sound1/202002/12505.wav" style="opacity:0" preload="auto" controls hidden="true"/>  
+		<script>
+			var myAuto = document.getElementById('audio');  
+	
+	        var app = document.getElementById("app");
+	        // 监听事件
+	        app.addEventListener("mousemove", function(){
+	        	console.log("played");
+	        	myAuto.play();
+	        }, true);
+	
+	        // 用定时器触发事件
+			setInterval(function(){
+				if ("createEvent" in document) {
+				 var evt = document.createEvent("HTMLEvents");
+				 evt.initEvent("mousemove", false, true);
+				 app.dispatchEvent(evt);
+				}
+				else
+				 app.fireEvent("onmousemove");
+			}, 1000);
+	
+		</script>
+	
+</body>
+</html>
