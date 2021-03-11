@@ -1,5 +1,5 @@
 <a href="complete">
-<button type="button" class="btn"  style="background-color: #7ED321;width: 76px;height: 36px;color: #FFFFFF">
+<button type="button" class="btn"  style="background-color: #7ED321;width: 168px;height: 50px;color: #FFFFFF">
 开始浏览
 </button>
 </a>
