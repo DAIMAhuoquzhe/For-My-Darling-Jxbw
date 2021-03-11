@@ -1,4 +1,11 @@
-<a href="complete">进入</a>
+<a href="complete">
+<button onclick="tz()">跳转</button>
+<script>
+function tz(){
+    window.location.href='目标网址';
+}
+</script>
+</a>
 ### 说明
 
 css代码确实很乱(ಡωಡ)，简单改了一下，电脑和手机都可以正常排版显示，iPad显示图片可能会遮挡文字，没有作特别适配，估计也很少有人会拿iPad去扫码看网页....
