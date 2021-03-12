@@ -29,7 +29,7 @@
  在complete下，有js/index.js文件：
  ```javascript
  //修改此处的123,123即可修改登录的用户名和密码
- if(userName=="123" &&  pwd=="123"){
+ if(userName=="xxxx" &&  pwd=="xxxx"){
    event.preventDefault();
    $('form').fadeOut(500);
    $('.wrapper').addClass('form-success');
@@ -37,6 +37,25 @@
  }
  ```
 
+## 音乐组件（按需添加）：
+**//
+<body>
+<meting-js 
+	server="netease" 
+	type="song" 
+	id="1403250178"
+	fixed="true" 
+	autoplay="true"
+	loop="all"
+	order="random"
+	preload="auto"
+	list-folded="ture"
+	list-max-height="500px"
+	lrc-type="0">
+</meting-js>
+</body>
+**//
+  另外网站主要应用了网易云插件具体教程请百度
 
 ## 如何给别人看
 1. 发给别人
@@ -61,19 +80,3 @@ Firfox未测试
 ## 改进计划
 暂无，后续可能会升级代码（感觉要重写）
 
-## 音乐组件（按需添加）：
-<body>
-<meting-js 
-	server="netease" 
-	type="song" 
-	id="1403250178"
-	fixed="true" 
-	autoplay="true"
-	loop="all"
-	order="random"
-	preload="auto"
-	list-folded="ture"
-	list-max-height="500px"
-	lrc-type="0">
-</meting-js>
-</body>
