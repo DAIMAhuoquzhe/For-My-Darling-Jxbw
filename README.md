@@ -38,8 +38,7 @@
  ```
 
 ## 音乐组件（按需添加）：
-**//
-<body>
+**//下面代码请放置在body标签下
 <meting-js 
 	server="netease" 
 	type="song" 
@@ -53,7 +52,6 @@
 	list-max-height="500px"
 	lrc-type="0">
 </meting-js>
-</body>
 **//
   另外网站主要应用了网易云插件具体教程请百度
 
