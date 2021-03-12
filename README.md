@@ -59,7 +59,7 @@
 ## 如何给别人看
 1. 发给别人
 2. 部署至云服务器或者虚拟主机（需要域名，成本较高）
-3. 部署至Gitee Pages、 Github Pages等托管网站
+3. 部署至Gitee、 Github等托管网站
 4. 内网穿透
 
 ## <a id="important" style="color: #000;">注意点</a>
