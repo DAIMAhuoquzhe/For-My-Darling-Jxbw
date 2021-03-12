@@ -7,7 +7,7 @@
 
 ### 点击上方按钮进入主网站
 
-### 由于GitHub服务器位于海外，为了长期稳定的浏览体验请收藏我托管在国内的网站<a href="cwjxbw1314.gitee.io/love">cwjxbw1314.gitee.io/love</a>
+### 由于GitHub服务器位于海外，为了长期稳定的浏览体验请收藏我托管在国内的网站<a href="https：//cwjxbw1314.gitee.io/love">cwjxbw1314.gitee.io/love</a>
 
 ### 以下是对网站模板化的说明
 
