@@ -1,27 +1,27 @@
 # Site settings
-title: Website Title
-description: Website short description
+title: Jade Chen 的 Github 博客
+description: 主站博客（建设中）
 baseurl: "" 
-#change the baseurl to "" if you are using it as your user GitHub Pages
-url: "https://yk-liu.github.io"  
+#change the baseurl to "https://cwjxbw1314.website/complete/" if you are using it as your user GitHub Pages
+url: "https://cwjxbw1314.website/complete/"  
 
 
 # GitHub User settings
-username: Username
-github_username: github_username
-user_description: user_description
-user_title: user_title
-email: 
+username: Jade Chen
+github_username: DAIMAhuoquzhe
+user_description: 码农小白一个
+user_title: 小白
+email:love@cwjxbw1314.website 
 
 # Blog Author settings
-author:
-  name:            
+author: Jade Chen
+  name: DAIMAhuoquzhe           
   picture:        
-  email:           
-  description:     
+  email: love@cwjxbw1314.website          
+  description: 。。。    
   twitter:
   facebook:
-  github:          
+  github: https://github.com/DAIMAhuoquzhe/For-My-Darling-Jxbw         
   linkedin:
   clustrmap:      
 
