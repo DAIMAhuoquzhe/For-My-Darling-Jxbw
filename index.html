@@ -2,16 +2,16 @@
 layout: home
 ---
 <div class="user-details">
-<h2> Me and this website </h2>
-<p style="text-align: justify;"> Your description </p>
+<h2> 我与此站 </h2>
+<p style="text-align: justify;"> 个人简介 </p>
 <div class="analytics"  style="border: solid lightgrey; border-radius: 5px;">
 	<h3> Analytics </h3>
 	{% include clustrmap.html style="js" %}
-	<p> <small> If you are not seeing a map, please disable Ad block </small></p>
+	<p> <small> 如果你在此处没有看到地图，请关闭ADblock </small></p>
 </div>
 </div>
 <div class="permlinks">
-<h2>Recent Posts</h2>
+<h2>最新的帖子</h2>
 <dl>
 	{% for post in site.posts limit:3 %}
 	<dt><code>{{ post.date | date_to_string }} </code><i class="fas fa-angle-double-right" aria-hidden="true"></i><a href="{{ post.url }}">{{ post.title }}</a> &nbsp;{% include status-indicator.html status=post.status%}
