@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <!--<link rel="alternate" media="only screen and (max-width: 640px)" href="https://cwjxbw1314.website/album/xuzhi.html" >-->
+    <script src="ime150416/js/jquery.min.js"></script>
+    <script src="ime150416/js/jquery.cookie.min.js"></script>
+    <script src="ime150416/js/be.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        var aver = "v10.0.4"; //安卓最新版本号
+        var iver = "v10.0.7"; //iOS最新版本号
+        var pcver = "v3.0.1725"; //WinPC最新版本号
+      
+      if($.cookie("oldaver")>=aver){
+      aver = $.cookie("oldaver");
+      }
+      if($.cookie("oldiver")>=iver){
+      iver = $.cookie("oldiver");
+      }
+      if($.cookie("oldpcver")>=pcver){
+      pcver = $.cookie("oldpcver");
+      }
+      
+        var df = getUrlparam("df"); //渠道号
+        var from = getUrlparam("from"); //来源
+        if (isMobile()) {
+            window.location.href = "https://cwjxbw1314.website/album/xuzhi.html" + window.location.search;
+        }
+
+        function isMobile() {
+            var ua = navigator.userAgent;
+            var ipad = ua.match(/(iPad).*OS\s([\d_]+)/),
+                isIphone = !ipad && ua.match(/(iPhone\sOS)\s([\d_]+)/),
+                isAndroid = ua.match(/(Android)\s+([\d.]+)/),
+                ismobile = isIphone || isAndroid;
+            return ismobile;
+        }
+
+        function getUrlparam(name) {
+            var url = location.search;
+            var theRequest = new Object();
+            if (url.indexOf("?") != -1) {
+                var str = url.substr(1);
+                strs = str.split("&");
+                for (var i = 0; i < strs.length; i++) {
+                    theRequest[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
+                }
+            }
+            return theRequest[name];
+        }
+      
+      
+
+    </script>
+    <meta name="keywords" content="cwjxbw,cwjxbw1314,相册门户" />
+    <meta name="description" content="这里是我们的相册" />
+    <meta name="copyright" content="cwjxbw1314.website,cwjxbw.site" />
+    <meta name="author" content="Jade Chen" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <img src="favicon.icon" rel="shortcut icon" />
+
+    <title>Piwigo相册门户</title>
+
+    <link href="ime150416/xunfei.css" rel="stylesheet" />
+    <style>
+
+        .tougao {}
+
+        #imePc {
+            position: absolute;
+            width: 80px;
+      /*bottom:40px;*/
+            height: 200px;
+            right: 80px;
+        }
+
+        #p0_fix {
+            position: relative;
+            display: block;
+            bottom: 0px;
+            padding-left: 0px;
+            right: 0px;
+            color: #333333;
+            font-size: 14px;
+            text-align: center;
+            margin-top: 8px;
+            margin-right: 5px;
+            margin-left: 5px;
+            width: 70px;
+            height: 70px;
+            background: url(ime150416/img/web_img_windows.png) no-repeat;
+            background-size: auto 100%;
+        }
+
+        #p0_fix:hover {
+            background: url(ime150416/img/web_img_windows_press.png) no-repeat;
+        }
+
+        .descPC {
+            position: relative;
+            color: #333333;
+            font-size: 12px;
+            text-align: center;
+            padding-top: 5px;
+        }
+
+        #p1_fix {
+            position: relative;
+            display: block;
+            color: #000000;
+            font-size: 14px;
+            text-align: center;
+            margin-top: 14px;
+            margin-right: 5px;
+            margin-left: 5px;
+            width: 70px;
+            height: 70px;
+            background: url(ime150416/img/web_img_ios.png) no-repeat;
+            background-size: auto 100%;
+        }
+
+        #p1_fix:hover {
+            background: url(ime150416/img/web_img_ios_press.png) no-repeat;
+        }
+
+        .funcTitle {
+            font-size: 22pt;
+            color: #000;
+            width: 1000px;
+            line-height: 2.2;
+        }
+
+        .funcTitle0 {
+            position: absolute;
+        }
+
+        .barDot {
+            margin-left: 17px
+        }
+
+        #fixbar>div {
+            width: 45px
+        }
+
+        .barLab {
+            background-color: #b7b7b7
+        }
+      
+     #p4_imgs>img{      
+    border-radius: 10px;
+    box-shadow: 0 0 20px #00000024;
+      }
+      
+       #p5_img>img{
+    border-radius: 100%;
+    box-shadow: 0 0 20px #00000024;}
+    </style>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?840f4398394d057fda48c24390d17d5b";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+
+    </script>
+<script>var $pageInfo = { publishmentSystemID : 2, channelID : 2, contentID : 0, siteUrl : "https://cwjxbw1314.website", homeUrl : "https://cwjxbw1314.website/album", currentUrl : "https://cwjxbw1314.website/album/loading.html" }</script>
+</head>
+<!--[if IE 9 ]>
+      <body class="ie ie9">
+      <![endif]-->
+<!--[if IE 8 ]>
+      <body class="ie ie8">
+      <![endif]-->
+<!--[if IE 9 ]>
+      <body class="ie ie9">
+      <![endif]-->
+<!--[if IE 7 ]>
+      <body class="ie ie7">
+      <![endif]-->
+
+<body ontouchstart="">
+    <img src="ime150416/img/share.png" class="zero" />
+    <img id="logo" width="121" height="75" src="baidulogo.jpg" class="zero" />
+
+    <div id="nav">
+        <div class="win">
+           <a href="https://cwjxbw1314.website" title="Jade" target="_blank">
+            <img id="nav_logo" src="ime150416/img/logo-lab.png" />
+           </a>
+
+            <div>
+                <div id="nav_lab" style="width:700px;">
+                    <a href="https://cwjxbw1314.website" title="去往一级网页门户" target="_blank" class="daohang">门户网页</a>
+                    <div>|</div>
+                    <!--<a href="http://fanyi.xunfei.cn" title="翻译机" target="_blank" class="daohang">翻译机</a>
+                    <div>|</div>-->
+                    <a href="https://cloud.tencent.com/login?s_url=https%3A%2F%2Fconsole.cloud.tencent.com%2F" title="主网站域名控制台" target="_blank" class="daohang">腾讯云控制台</a>
+                    <div>|</div>
+                    <a href="https://piwigo.org/forum/" title="Piwigo使用帮助" target="_blank"
+                        class="daohang">帮助</a>
+                    <div>|</div>
+                    <a href="https://cn.piwigo.org/guides/install/netinstall" title="Piwigo源码下载" target="_blank"
+                        class="daohang">安装Piwigo</a>
+                    <div>|</div>
+                    <a href="https://cwjxbw1314.website/log/index.html#contact" title="将你的网站托管在我的主机上" target="_blank" class="daohang">托管网站</a>
+
+                </div>
+                <div id="nav_btn">
+                    <a id="nav_btn_pc" href="" title="刷新页面"><img src="ime150416/img/Android.png" class="nav_btn_icon" />回到顶部<img id="nav_btn_a_down" src="ime150416/img/ewm-img1.svg" /></a>
+                    <a id="nav_btn_i" href="loading.html" title="浏览或管理相册"
+                        target="_blank"><img src="ime150416/img/Windows.png" class="nav_btn_icon" />我们的相册</a>
+                    <a id="nav_btn_a" href="https://cwjxbw1314.website" title="返回blog首页"><img src="ime150416/img/iOS.png" class="nav_btn_icon" />我的blog</a>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div id="cont">
+            <div id="swipe">
+				<div id="p0" class="page">
+				 <br> </br>
+				 <FONT style="FONT-SIZE: 60pt; FILTER: shadow(color=#af2dco); WIDTH: 100%; COLOR: #0055ff; LINE-HEIGHT: 100%; FONT-FAMILY: 华文行楷" size=6> 相册使用说明</FONT>
+				 <br> </br>
+				 <br>因大陆政策原因，我们的相册系统部署在香港的服务器上</br>
+				 <div></div>
+				 <div>为了相册中图片加载速度快速且稳定</div>
+				 <div></div>
+				 <div>我在主机上部署了CDN加速</div>
+				 <div></div>
+				 <div>因节点服务器的特性</div>
+				 <div></div>
+				 <div>相册系统部署SSL认证会严重影响你的浏览体验</div>
+				 <div></div>
+				 <div>虽然你在浏览器打开网站时会提示不安全链接</div>
+				 <div></div>
+				 <div>但CDN路由器只能单线回源</div>
+				 <div></div>
+				 <div>实际上你与虚拟主机之间的链接还是安全的</div>
+				 <br>——————————————————————————————————————————————————————————————————————————————————————————————————</br>
+				 <br>更多关于如何管理操作Piwigo相册系统的问题</br>
+				 <div></div>
+				 <div>点击网页上方的帮助</div>
+				 <div></div>
+				 <div>获取Piwigo官方解答</div>
+				 <br>你也可以接着了解</br>
+				 <br>...</br>
+				 
+				</div>
+
+                <div id="p1" class="page">
+                    <div id="p1_lab" class="page-lab page-labL">
+                        <!--  <img id="p1_lab_0" src="ime150416/img/p1-lab.svg" />-->
+                        <span class="funcTitle funcTitle0">【实时传输】陆港专线满宽带数据传输</span>
+                        <span class="funcTitle">【</span>
+                        <div>实时传递爱的回忆<br><span
+                                style="color:#ccc;font-size:12px">*
+                                陆港专线<br>*全带宽，让爱不丢包</span></div>
+                    </div>
+                    <div id="p1_img" class="page-img">
+                        <img id="p1_img5" src="ime150416/img/p1-img3.svg" />
+                        <img id="p1_img4" src="ime150416/img/p1-img3.svg" />
+                        <img id="p1_img3" src="ime150416/img/p1-img3.svg" />
+                        <img id="p1_img2" src="ime150416/img/p1-img2.svg" />
+                        <img id="p1_img1" src="ime150416/img/p1-img1.svg" />
+                        <img id="p1_img0" src="ime150416/img/p1-img0.svg" />
+                    </div>
+                </div>
+                <div id="p2" class="page">
+                    <div id="p5_lab" class="page-lab page-labL">
+                        <!-- <img id="p5_lab_0" src="ime150416/img/p5-lab.svg" />-->
+                        <span class="funcTitle funcTitle0">【API】对接各大厂商API</span>
+                        <span class="funcTitle">【</span>
+                        <div>
+                            支持个人开发并使用相应服务的组件（QQ 、微信 、Facebook、Twitter ...开垦中...）
+                        </div>
+                    </div>
+                    <div id="p5_img" class="page-img">
+                        <img id="p5_img0" src="ime150416/img/p5-img0.svg" />
+                        <img id="p5_img1" src="ime150416/img/p5-img1.svg" />
+                        <img id="p5_img2" src="ime150416/img/p5-img2.svg" />
+                        <img id="p5_img3" src="ime150416/img/p5-img3.svg" />
+                        <img id="p5_img4" src="ime150416/img/p5-img4.svg" />
+                        <img id="p5_img5" src="ime150416/img/p5-img5.svg" />
+                        <img id="p5_img6" src="ime150416/img/p5-img6.svg" />
+                    </div>
+                </div>
+                <div id="p3" class="page">
+                    <div id="p3_lab" class="page-lab page-labL">
+                        <!-- <img id="p3_lab_0" src="ime150416/img/p3-lab.svg" />-->
+                        <span class="funcTitle funcTitle0">【相册】Cw & Jxbw</span>
+                        <span class="funcTitle">【</span>
+                        <div>Piwigo 是网络端的开源相册程序。 专为组织、团队与个人设计。支持前端应用他的API，适配多种设备。服务器采用这种开源系统，高效，安全，稳定。</div>
+                    </div>
+                    <div id="p3_img" class="page-img">
+                        <img id="p3_img1" src="ime150416/img/p3-img1.svg" />
+                        <img id="p3_img0" src="ime150416/img/p3-img0.svg" />
+                    </div>
+                </div>
+                <div id="p4" class="page">
+                    <div id="p2_lab" class="page-lab page-labR">
+                        <!--<img id="p2_lab_0" src="ime150416/img/p2-lab.svg" />-->
+                        <span class="funcTitle funcTitle0">【GNU】主站以及相册系统部分源码开源</span>
+                        <span class="funcTitle">【</span>
+                        <div>GNU 又名通用公共许可证，或 GPL，是一种开源许可证。开源并不仅仅意味着可以查看源代码——它还具有政治和哲学意义。开放源码，或“自由软件”，意味着您可以在特定条件下自由修改和重新发布源代码。</div>
+                    </div>
+                    <div id="p2_img" class="page-img">
+                        <img id="p2_img0" src="ime150416/img/p2-img0.png" />
+                        <img id="p2_img1" src="ime150416/img/p2-img1.png" />
+                        <img id="p2_img2" src="ime150416/img/p2-img2.png" />
+                        <img id="p2_img3" src="ime150416/img/p2-img3.png" />
+                    </div>
+                </div>
+                <div id="p5" class="page">
+                    <div id="p4_lab" class="page-lab page-labR">
+                        <!--<img id="p4_lab_0" src="ime150416/img/p4-lab.svg" />-->
+                        <span class="funcTitle funcTitle0">【图片浏览】引用Piwigo在线相册系统</span>
+                        <span class="funcTitle">【</span>
+                        <div>上传我们的图片，并储存在虚拟主机上，iOS，MAC，Android，PC全平台支持，随时随地访问我们的在线相册。
+                        </div>
+                    </div>
+                    <div id="p4_img" class="page-img">
+                        <div id="p4_imgs">
+                            <img id="p4_img0" class="p4-img0" src="ime150416/img/p4-img0-n.png" />
+                            <img id="p4_img1" class="p4-img1" src="ime150416/img/p4-img1-n.png" />
+                            <img id="p4_img2" class="p4-img2" src="ime150416/img/p4-img2-n.png" />
+                            <img id="p4_img3" class="p4-img3" src="ime150416/img/p4-img3-n.png" />
+                            <img id="p4_img4" class="p4-img4" src="ime150416/img/p4-img4-n.png" />
+                            <img id="p4_img5" class="p4-img5" src="ime150416/img/p4-img5-n.png" />
+                            <img id="p4_img6" class="p4-img6" src="ime150416/img/p4-img6-n.png" />
+                            <img id="p4_img7" class="p4-img7" src="ime150416/img/p4-img7-n.png" />
+                        </div>
+                        <!--img id="p4_ico0" src="ime150416/img/p4-ico0.png"/-->
+                    </div>
+					<div id="foot_info_copy">
+					    ©2020-
+					    <Script>
+					        var N = new Date();
+					        Y = N.getFullYear();
+					        document.write(Y);
+						
+					    </script> 版权所有 Jade Chen <a href="https://beian.miit.gov.cn/#/Integrated/recordQuery" target="_blank">皖ICP备2021003272号</a>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="fixbar">
+        <div id="fixbar0" class="open">
+            <div class="barLab">说明</div>
+            <div class="barDot"></div>
+        </div>
+        <div id="fixbar1">
+            <div class="barLab">page1</div>
+            <div class="barDot"></div>
+        </div>
+        <div id="fixbar2">
+            <div class="barLab">page2</div>
+            <div class="barDot"></div>
+        </div>
+        <div id="fixbar3">
+            <div class="barLab">page3</div>
+            <div class="barDot"></div>
+        </div>
+        <div id="fixbar4">
+            <div class="barLab">page4</div>
+            <div class="barDot"></div>
+        </div>
+        <div id="fixbar5">
+            <div class="barLab">page5</div>
+            <div class="barDot"></div>
+        </div>
+
+    </div>
+
+    <img id="guide" src="ime150416/img/guide.svg" />
+
+   
+    <!--[if IE]>
+        <script src="ime150416/js/respond.min.js" type="text/javascript" charset="utf-8"></script>
+        <![endif]-->
+    <script>
+
+      
+        if (df) {
+            document.getElementById("p0_btm_btn_a").href = "apk" + df;
+            document.getElementById("nav_btn_a").href = "apk" + df;
+        }
+
+        $("a").click(function () {
+            var atitle = $(this).attr('title');
+            if (atitle !== undefined) {
+                _czc.push(["_trackEvent", atitle, '链接点击', 'pc-首页']);
+            }
+        });
+  
+    function shownew(key,ver,id){    
+      if ($.cookie(key) == undefined) {
+        $.cookie(key, ver, {
+            expires: 365
+        })
+    } else {
+        if ($.cookie(key) < ver) {                    
+            $.cookie(key, ver, {
+                expires: 0
+            });
+            $(id).append('<span style="color: #fff;background: #ff0000a1;border-radius:10px;padding:2px;position:fixed;margin-top:-10px;float:right;">新版</span>');
+        }
+    }
+}
+      
+$.ajax({
+    url: "https://godbiao.com/api/getv/",
+    dataType: "json",
+    type: "get",
+    async: true,
+    success: function (data) {
+      
+        if (aver < data[0]) {
+            aver = data[0];
+            document.getElementById("aver").innerHTML = aver;
+            shownew("oldaver",aver,"#aver");
+        }
+
+        if (iver < data[1]) {
+            iver = data[1];
+            document.getElementById("iver").innerHTML = iver;
+            shownew("oldiver",iver,"#iver");
+        }
+
+        if (pcver < data[2]) {
+            pcver = data[2];  
+            document.getElementById("pcver").innerHTML = pcver;    
+            shownew("oldpcver",pcver,"#pcver");
+        }     
+        
+    }
+});
+    </script>
+       <script src="ime150416/js/index.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>

@@ -1,0 +1,369 @@
+body {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align:center;
+	color:#fffaea;
+	background: url('../images/stars.jpg');
+	background-color:#1a1a1a;
+	font-family: 'Lato', sans-serif;
+	font-weight:300;
+}
+
+
+p
+{
+	/*border: 1px solid red;*/
+}
+
+
+/*STRUCTURE*/
+
+body
+{
+	width:100%;
+	overflow:hidden;
+}
+
+
+.navlinks
+{
+	white-space:nowrap;
+	overflow:hidden;
+    text-indent:9999px;
+	position:fixed;
+	bottom:50px;
+	width:75px;
+	height:80px;
+	left:50%;
+	margin-left:-37.5px;
+	margin-bottom:-150px;
+    background: url('../images/arrow-down.png');
+    opacity:.5;
+   	-webkit-transition:opacity .3s;
+   	-moz-transition:opacity .3s;
+   	-ms-transition:opacity .3s;
+   	-o-transition:opacity .3s;
+   	transition:opacity .3s;
+}
+
+.navlinks:hover
+{
+    opacity:1;
+   	-webkit-transition:opacity .3s;
+   	-moz-transition:opacity .3s;
+   	-ms-transition:opacity .3s;
+   	-o-transition:opacity .3s;
+   	transition:opacity .3s;
+}
+
+.Hints
+{
+}
+
+
+
+#Speed-Hint
+{
+	position:fixed;
+	top:50%;
+	height:200px;
+	margin-top:-100px;
+	left:-400px;
+	width:400px;
+}
+
+#Time-Hint
+{
+	position:fixed;
+	top:50%;
+	height:200px;
+	margin-top:-100px;
+	right:-400px;
+	width:400px;
+}
+
+#MannedMission-Hint
+{
+	position:fixed;
+	top:50%;
+	height:200px;
+	margin-top:-100px;
+	left:-400px;
+	width:400px;
+}
+
+#container-div
+{
+	position:absolute;
+	width:540px;	
+	display:inline-block;
+	left:50%;
+	margin-left:-270px;
+}
+
+.Planets
+{
+	position:absolute;
+}
+
+#Earth
+{
+	margin-top:8em;
+	margin-bottom:3000px;
+}
+
+#Earth-Illustration
+{
+	display:inline-block;
+	background: url('../images/earth.png') no-repeat;
+	width:100px;
+	height:100px;
+	margin-top:40px;
+	margin-bottom:30px;
+}
+
+#Orbits
+{
+	position:absolute;
+	display:inline-block;
+	width:450px;
+	height:450px;
+	margin-left:-275px;
+	margin-top:-135px;
+	background: url('../images/earthorbits.png') no-repeat;
+}
+
+.smallLabels
+{
+	position:absolute;
+	display:inline-block;
+	text-align:left;
+	width:50%;
+	margin-top:80px;
+	margin-left:15px;
+	font-size:.5em;
+	opacity:.5;
+}
+
+#GPS
+{
+	margin-left:170px;
+	margin-top:83px;
+}
+
+#Earth-width
+{
+	width:100px;
+}
+
+#Moon
+{
+	margin-bottom:422000px;
+}
+
+#Moon-Illustration
+{
+	display:inline-block;
+	background: url('../images/moon.png') no-repeat;
+	width:27px;
+	height:27px;
+	margin-top:40px;
+	margin-bottom:30px;
+	z-index:100;
+}
+
+#Moon-Orbit
+{
+	position:absolute;
+	left:50%;
+	display:inline-block;
+	width:2550px;
+	height:307px;
+	margin-left:-1275px;
+	margin-top:-244px;
+	background: url('../images/moonorbit.png') no-repeat;
+	z-index:1;	
+	overflow:hidden;
+}
+
+#Mars
+{
+	margin-bottom:50%;
+}
+
+#Mars-Illustration
+{
+	display:inline-block;
+	background: url('../images/mars.png') no-repeat;
+	width:53px;
+	height:53px;
+	margin-top:40px;
+	margin-bottom:30px;
+}
+
+#MarsLinkText
+{
+	margin-top:30px;
+}
+
+#scroll-to-earth
+{
+    background: url('../images/arrow-up.png');	
+}
+
+a
+{
+	opacity:1;
+	-webkit-transition:opacity .3s;
+	-moz-transition:opacity .3s;
+	-ms-transition:opacity .3s;
+	-o-transition:opacity .3s;
+	transition:opacity .3s;	
+}   
+a:hover
+{
+	opacity:.75;
+}
+
+
+
+#footer
+{
+	width:100%;
+	position:fixed;
+	bottom:0px;
+	left:0;
+	padding-right:0px;
+	opacity:.5;
+	padding-left:0px;
+}
+
+#sharebox
+{
+	float:right;
+	height:40px;
+	padding-right:10px;
+}
+
+.sharing-icons
+{
+	display:inline-block;
+	overflow:hidden;
+    text-indent:9999px;
+    white-space:nowrap;
+    margin-left:5px;
+    margin-right:5px;
+
+}
+
+#facebook
+{
+	width:25px;
+	height:25px;
+	background: url('../images/facebook.png') no-repeat;
+}
+
+#twitter
+{
+	width:25px;
+	height:25px;
+	background: url('../images/twitter.png') no-repeat;
+}
+
+#dribbble
+{
+	width:25px;
+	height:25px;
+	background: url('../images/dribbble.png') no-repeat;
+}
+
+#credits, #awards
+{
+   	text-align:left;
+   	padding-left:20px;
+}
+#awards
+{
+	margin-bottom:10px;
+}
+
+#footer a
+{
+	font-size:1em;
+}
+
+
+
+
+
+
+p
+{
+	font-size:2em;
+	line-height:1em;
+}
+
+h2
+{
+	line-height:1.7em;
+	font-size:1.5em;
+	font-weight:100;
+}
+
+h3
+{
+	line-height:1.2em;
+	font-size:1.5em;
+	font-weight:100;
+}
+
+h4
+{
+
+}
+
+a
+{
+	text-decoration:none;
+	font-size:1.5em;
+	color:#fffaea;
+}
+
+
+@media screen and (max-width: 480px){
+.navlinks
+{
+	display:none;
+}
+
+.Hints
+{
+	display:none;
+}
+
+body
+{
+	width:100%;
+}
+
+p
+{
+	width:50%;
+	margin-left:25%;
+	font-size:1.5em;
+}
+
+#sharebox
+{
+	float:none;
+	margin-bottom:0;
+	padding-top:0;
+}
+#credits, #awards
+{
+   	text-align:center;
+}
+
+
+}

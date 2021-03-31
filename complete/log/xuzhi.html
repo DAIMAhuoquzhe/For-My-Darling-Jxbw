@@ -1,32 +1,245 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>中转页面</title>
-    <style type="text/css">
-  input{
-           text-align: center; /*让div内部文字居中*/
-           background-color: #0055ff;
-           border-radius: 20px;
-           width: 260px;
-           height: 80px;
-           margin: auto;
-           position: absolute;
-           top: 100px;
-           left: 0;
-           right: 0;
-           bottom: 0;
-       }
-    </style>
-</head>
-<body>
-	<div>
-		<h2>这里是中转页，请仔细阅读下面的说明：</h1>
-		<h1>1.下个页面内容较大,网页尚在优化，有些设备初次加载会很缓慢。为了你的浏览体验，请等待网页加载完毕后再浏览！</h1>
-		<h1>2.---</h1>
-	<a href="index.html" >
-    <input type="button" value="了解并继续浏览"/><br/>
-	</a>
-	</div>
-</body>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		<link rel="stylesheet" href="./complete/css/iconfont.css">
+		<title>网页中转中心</title>
+		<style>
+			body,
+			h1,
+			p {
+				margin: 0;
+				padding: 0;
+			}
+
+			a {
+				text-decoration: none;
+			}
+
+			button {
+				padding: 0;
+				font-family: inherit;
+				background: none;
+				border: none;
+				outline: none;
+				cursor: pointer;
+			}
+
+			html {
+				width: 100%;
+				height: 100%;
+				background-color: #ffffff;
+			}
+
+			body {
+				padding-top: 100px;
+				color: #222;
+				font-size: 13px;
+				font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+				line-height: 1.5;
+				-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+			}
+
+			@media (max-width: 620px) {
+				body {
+					font-size: 15px;
+				}
+			}
+
+			.button {
+				display: inline-block;
+				padding: 10px 16px;
+				color: #fff;
+				font-size: 14px;
+				line-height: 1;
+				background-color: #0077d9;
+				border-radius: 3px;
+			}
+
+			@media (max-width: 620px) {
+				.button {
+					font-size: 16px;
+				}
+			}
+
+			.button:hover {
+				background-color: #0070cd;
+			}
+
+			.button:active {
+				background-color: #aa00ff;
+			}
+
+			.link-button {
+				color: #aa00ff;
+				font-size: 13px;
+			}
+
+			@media (max-width: 620px) {
+				.link-button {
+					font-size: 15px;
+				}
+			}
+
+			.logo,
+			.wrapper {
+				margin: auto;
+				padding-left: 30px;
+				padding-right: 30px;
+				max-width: 540px;
+			}
+
+			.wrapper {
+				padding-top: 25px;
+				padding-bottom: 25px;
+				background-color: #ffaaff;
+				border: 1px solid #ff0000;
+				border-radius: 5px;
+			}
+
+			@media (max-width: 620px) {
+
+				.logo,
+				.wrapper {
+					margin: 0 10px;
+				}
+			}
+
+			h1 {
+				margin-bottom: 12px;
+				font-size: 16px;
+				font-weight: 700;
+				line-height: 1;
+			}
+
+			@media (max-width: 620px) {
+				h1 {
+					font-size: 18px;
+				}
+			}
+
+			.warning {
+				color: #c33;
+			}
+
+			.link {
+				margin-top: 12px;
+				word-wrap: normal;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				cursor: pointer;
+			}
+
+			.link.is-expanded {
+				word-wrap: break-word;
+				white-space: normal;
+			}
+
+			.actions {
+				margin-top: 15px;
+				padding-top: 30px;
+				text-align: right;
+				border-top: 1px solid #d8d8d8;
+			}
+
+			.actions .link-button+.link-button {
+				margin-left: 30px;
+			}
+
+			.tip {
+				position: relative;
+				display: none;
+				margin-top: 30px;
+				padding-top: 18px;
+				color: #ff0000;
+				text-align: left;
+				background: #f7f7f7;
+				border-top: 1px solid #d8d8d8;
+				opacity: 0;
+				transition: opacity .2s ease-out;
+			}
+
+			.tip.is-visible {
+				opacity: 1;
+			}
+
+			.tip:after,
+			.tip:before {
+				position: absolute;
+				bottom: 100%;
+				right: 5em;
+				content: " ";
+				height: 0;
+				width: 0;
+				border: solid transparent;
+				pointer-events: none;
+			}
+
+			.tip:after {
+				margin-right: -6px;
+				border-color: rgba(247, 247, 247, 0);
+				border-bottom-color: #f7f7f7;
+				border-width: 6px;
+			}
+
+			.tip:before {
+				margin-right: -7px;
+				border-color: rgba(216, 216, 216, 0);
+				border-bottom-color: #d2d2d2;
+				border-width: 7px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+
+			<div class="content">
+				<h1>即将离开中转页面</h1>
+				<p class="info">下个页面内容较大,网页尚在优化，有些设备初次加载会很缓慢（平均打开速度15s）。为了你的浏览体验，请等待网页加载完毕后再浏览！—— 2021 3.10</p>
+			    <br>PC端网页优化完毕，平均打开速度0.5s，其他设备正在适配 —— 2021 3.28</br>
+			    <br>去除侧边导航栏fontawesome图标，全终端优化适配完成 —— 2021 3.30</br>
+				<p class="link">来自 https://cwjxbw1314.website 的说明</p>
+			</div>
+			<div class="actions">
+				<a class="button" href="index.html">继续访问</a>
+			</div>
+
+		</div>
+		<script>
+			var showTipButton = document.querySelector('.js-show-tip');
+			var tipEl = document.querySelector('.tip');
+			var showTip = function() {
+				tipEl.style.display = 'block';
+				tipEl.offsetWidth; // force reflow
+				tipEl.className = 'tip is-visible';
+				return false;
+			};
+			var linkEl = document.querySelector('.link');
+			var selectLink = function() {
+				linkEl.className = 'link is-expanded';
+				if (document.body.createTextRange) {
+					range = document.body.createTextRange();
+					range.moveToElementText(linkEl);
+					range.select();
+				} else if (window.getSelection) {
+					selection = window.getSelection();
+					range = document.createRange();
+					range.selectNodeContents(linkEl);
+					selection.removeAllRanges();
+					selection.addRange(range);
+				};
+			};
+			if (window.addEventListener) {
+				showTipButton.addEventListener('click', showTip);
+				linkEl.addEventListener('click', selectLink);
+			} else {
+				showTipButton.attachEvent('onclick', showTip);
+				linkEl.attachEvent('onclick', selectLink);
+			}
+		</script>
+	</body>
 </html>
