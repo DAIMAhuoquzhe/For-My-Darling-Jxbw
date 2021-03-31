@@ -1,14 +1,4 @@
 <<<<<<< HEAD
-# Funday -- 个人简历模板
-
-<a href='http://gitee.com/xiaodan_yu/resume.io/stargazers'><img src='http://gitee.com/xiaodan_yu/resume.io/badge/star.svg?theme=dark' alt='star'></img></a>
-<a href='http://gitee.com/xiaodan_yu/resume.io/members'><img src='http://gitee.com/xiaodan_yu/resume.io/badge/fork.svg?theme=dark' alt='fork'></img></a>
-
-## 名字释义
-
-<strong>Funday</strong>，是星期八，开心Day的意思。以前很多玩笑都是说要等星期八才能实现，OK，Then it happened now!
-
-希望每个人在使用了Funday之后在找工作的时候都是处在星期八，开开心心，快快乐乐，轻轻松松拿到心仪的多金的Offer！
 
 ## 使用方法
 
@@ -89,22 +79,6 @@ Configuration file: C:/..../resume.io/_config.yml
 ```
 
 然后可以访问[http://127.0.0.1:4000/resume.io/](http://127.0.0.1:4000/resume.io/)来访问本地的服务了。
-
-
-## 在线预览
-
-[非你莫属--个人简历模板](http://xiaodan_yu.gitee.io/resume.io)
-
-## 截图预览
-
-![01.png](http://xiaodan_yu.gitee.io/resume.io/snapshot/11_01.png)
-
-![02.png](http://xiaodan_yu.gitee.io/resume.io/snapshot/11_02.png)
-
-![03.png](http://xiaodan_yu.gitee.io/resume.io/snapshot/11_03.png)
-
-![04.png](http://xiaodan_yu.gitee.io/resume.io/snapshot/11_04.png)
-
 
 ## 参考
 
