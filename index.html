@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+<<<<<<< HEAD
 
 <div id="ace-content" class="ace-container-shift">
     <div class="ace-container">
@@ -73,3 +74,34 @@ layout: default
         </div><!-- .ace-paper-stock -->
     </div><!-- .ace-container -->
 </div><!-- #ace-content -->
+=======
+<div class="user-details">
+<h2> 我与此站 </h2>
+<p style="text-align: justify;"> 个人简介 </p>
+<div class="analytics"  style="border: solid lightgrey; border-radius: 5px;">
+	<h3> Analytics </h3>
+	{% include clustrmap.html style="js" %}
+	<p> <small> 如果你在此处没有看到地图，请关闭ADblock </small></p>
+</div>
+</div>
+<div class="permlinks">
+<h2>最新的帖子</h2>
+<dl>
+	{% for post in site.posts limit:3 %}
+	<dt><code>{{ post.date | date_to_string }} </code><i class="fas fa-angle-double-right" aria-hidden="true"></i><a href="{{ post.url }}">{{ post.title }}</a> &nbsp;{% include status-indicator.html status=post.status%}
+	{% if post.description %}
+ <dd style="text-align: justify">{{ post.description | markdownify }}
+    </dd>
+	{% endif %}
+	{% endfor %}
+	<p>... <a href="/blog">Full Posts List</a> </p>
+</dl>
+
+<h2>Upcoming Posts (edit me at /index.html )</h2>
+<ul>
+	<li>Post 1</li>
+	<li>Post 2</li>
+</ul>
+
+</div >
+>>>>>>> d40173086724be9deadd9db0731531a5b97b20a3

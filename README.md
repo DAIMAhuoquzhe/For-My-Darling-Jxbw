@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Funday -- 个人简历模板
 
 <a href='http://gitee.com/xiaodan_yu/resume.io/stargazers'><img src='http://gitee.com/xiaodan_yu/resume.io/badge/star.svg?theme=dark' alt='star'></img></a>
@@ -12,6 +13,9 @@
 ## 使用方法
 
 1. 修改`_config.yml`文件中的内容
+=======
+ github博客首页使用了这些资源：
+>>>>>>> d40173086724be9deadd9db0731531a5b97b20a3
 
 ```
 # 个人名称或昵称
