@@ -1,48 +1,11 @@
 # Site settings
 <<<<<<< HEAD
-name: 董小姐
-location: 大连
-company: IBM
-position: Java开发工程师
+name: Jade Chen
+location: 合肥
+company: 安徽农业大学
+position: 小白码农
 github: https://github.com/
 facebook: https://www.facebook.com/
-phone: 1580424XXXX
-email: xxxx@xxx.com
-=======
-title: Jade Chen 的 Github 博客
-description: 主站博客（建设中）
-baseurl: "" 
-#change the baseurl to "https://cwjxbw1314.website/complete/" if you are using it as your user GitHub Pages
-url: "https://cwjxbw1314.website/complete/"  
->>>>>>> d40173086724be9deadd9db0731531a5b97b20a3
-
-baseurl: "/resume.io"
-
-<<<<<<< HEAD
-permalink: /:year/:month/:day/:title/
-
-exclude: ['README.md']
-=======
-# GitHub User settings
-username: Jade Chen
-github_username: DAIMAhuoquzhe
-user_description: 码农小白一个
-user_title: 小白
-email: love@cwjxbw1314.website 
-
-# Blog Author settings
-author: Jade Chen
-  name:            
-  picture:        
-  email: love@cwjxbw1314.website          
-  description: 。。。    
-  twitter:
-  facebook:
-  github: https://github.com/DAIMAhuoquzhe/For-My-Darling-Jxbw         
-  linkedin:
-  clustrmap:      
->>>>>>> d40173086724be9deadd9db0731531a5b97b20a3
-
-# Build settings
-markdown: kramdown
+phone: 1985560xxxx
+email: love@cwjxbw1314.website
 
