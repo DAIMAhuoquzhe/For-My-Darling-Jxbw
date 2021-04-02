@@ -105,6 +105,7 @@ css代码确实很乱(ಡωಡ)，简单改了一下，电脑和手机都可以�
 
 
 ## 音乐组件：
+```html
 <body>
 <meting-js 
 	server="netease" 
@@ -120,3 +121,4 @@ css代码确实很乱(ಡωಡ)，简单改了一下，电脑和手机都可以�
 	lrc-type="0">
 </meting-js>
 	</body>
+```
